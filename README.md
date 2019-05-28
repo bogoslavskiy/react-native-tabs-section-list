@@ -1,4 +1,6 @@
 # react-native-tabs-section-list
+[![npm version](https://badge.fury.io/js/react-native-tabs-section-list.svg)](https://badge.fury.io/js/react-native-tabs-section-list)
+
 React Native SectionList with scrollable tabs
 
 <img src="https://raw.githubusercontent.com/bogoslavskiy/react-native-tabs-section-list/master/demo.gif" width="360">
