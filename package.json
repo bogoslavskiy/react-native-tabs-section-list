@@ -1,6 +1,6 @@
 {
   "name": "react-native-tabs-section-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native SectionList with scrollable tabs",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -17,7 +17,8 @@
     "scrollview",
     "flatlist",
     "sectionlist",
-    "scroll"
+    "scroll",
+    "tabs"
   ],
   "author": "Artem Bogoslavskiy",
   "license": "MIT",
