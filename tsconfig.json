@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "lib/",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "jsx": "react-native",
+    "lib": ["esnext"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "strict": true,
+    "pretty": true,
+    "removeComments": false,
+    "sourceMap": true,
+  },
+  "include": ["src"]
+}

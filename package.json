@@ -1,0 +1,41 @@
+{
+  "name": "react-native-tabs-section-list",
+  "version": "1.0.0",
+  "description": "React Native SectionList with scrollable tabs",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib/* && yarn lint && tsc",
+    "lint": "tslint 'src/**/*.ts?(x)'"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "android",
+    "ios",
+    "scrollview",
+    "flatlist",
+    "sectionlist",
+    "scroll"
+  ],
+  "author": "Artem Bogoslavskiy",
+  "license": "MIT",
+  "homepage": "https://github.com/bogoslavskiy/react-native-tabs-section-list",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bogoslavskiy/react-native-tabs-section-list"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.57.0",
+    "react": "16.5.0",
+    "react-native": "0.57.0",
+    "tslint": "5.12.0",
+    "tslint-config-airbnb": "5.11.1",
+    "typescript": "3.4.5"
+  },
+  "peerDependencies": {
+    "react": "> 15.0.0",
+    "react-native": "> 0.50.0"
+  }
+}
