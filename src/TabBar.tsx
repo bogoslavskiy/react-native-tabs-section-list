@@ -8,7 +8,9 @@ import {
   LayoutRectangle,
   SectionListData,
   RegisteredStyle,
-  ViewStyle
+  ViewStyle,
+  I18nManager,
+  Platform
 } from 'react-native';
 const WindowWidth = Dimensions.get('window').width;
 
@@ -48,7 +50,8 @@ export default class TabBar extends React.PureComponent<IProps, any> {
   }
 
   getScrollAmount = () => {
-    const { currentIndex } = this.props;
+    const isInverted = I18nManager.isRTL && Platform.OS === 'ios'
+    const { currentIndex, sections } = this.props;
     const position = currentIndex;
     const pageOffset = 0;
 
@@ -57,7 +60,7 @@ export default class TabBar extends React.PureComponent<IProps, any> {
     const nextTabMeasurements = this._tabsMeasurements[position + 1];
     const nextTabWidth =
       (nextTabMeasurements && nextTabMeasurements.width) || 0;
-    const tabOffset = this._tabsMeasurements[position].left;
+    const tabOffset = this._tabsMeasurements[isInverted ? sections.length - 1 - position : position][isInverted ? 'right' : 'left'];
     const absolutePageOffset = pageOffset * tabWidth;
     let newScrollX = tabOffset + absolutePageOffset;
 
